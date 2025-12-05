@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-    <img className="logo" src="../public/Logo PLANMIX con nombre.png" alt="Logo PLANMIX" />
+    <img className="logo" src="/PROYECTO-INTEGRADOR-REACT-UNTREF/public/Logo-PLANMIX.png" alt="Logo PLANMIX" />
     <div className="app">
 
       {/* Tabla comparativa */}

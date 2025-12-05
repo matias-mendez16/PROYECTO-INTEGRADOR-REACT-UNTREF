@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background: #0a1a2f; /* azul oscuro */
+  background-color: #0a1a2f; 
   color: #f0f0f0;
   display: flex;
   justify-content: center;
@@ -150,4 +150,63 @@ td {
   height: 30%;
   padding-top: 5%;
   margin-left: 38%;
+}
+
+/* 📱 Estilos para pantallas de celulares */
+@media (max-width: 575px) {
+  body {
+      background-color: #0a1a2f; 
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60%;
+    margin-left: 30% ;
+    padding-top: 0;
+  }
+
+  .comparison-container {
+    flex-direction: column; /* apila las tablas */
+    align-items: center;
+  }
+
+  .comparison {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Variante: dos tablas arriba y una abajo */
+  .comparison-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .comparison {
+    flex: 1 1 45%; /* dos tablas lado a lado */
+    max-width: 90%;
+  }
+
+  .comparison-container .comparison:nth-child(3) {
+    flex: 1 1 90%; /* la tercera ocupa todo abajo */
+  }
+
+  .services {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .service-block {
+    max-width: 90%;
+  }
+
+  .form {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .quote {
+    width: 90%;
+  }
 }
