@@ -152,7 +152,6 @@ td {
   margin-left: 38%;
 }
 
-/* 📱 Estilos para pantallas de celulares */
 @media (max-width: 575px) {
   body {
       background-color: #0a1a2f; 
@@ -167,7 +166,7 @@ td {
   }
 
   .comparison-container {
-    flex-direction: column; /* apila las tablas */
+    flex-direction: column; 
     align-items: center;
   }
 
@@ -176,19 +175,18 @@ td {
     margin-bottom: 20px;
   }
 
-  /* Variante: dos tablas arriba y una abajo */
   .comparison-container {
     flex-wrap: wrap;
     justify-content: center;
   }
 
   .comparison {
-    flex: 1 1 45%; /* dos tablas lado a lado */
+    flex: 1 1 45%; 
     max-width: 90%;
   }
 
   .comparison-container .comparison:nth-child(3) {
-    flex: 1 1 90%; /* la tercera ocupa todo abajo */
+    flex: 1 1 90%; 
   }
 
   .services {
