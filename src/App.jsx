@@ -11,8 +11,11 @@ function App() {
 
   return (
     <>
-    <img src="/Logo-PLANMIX.png" alt="Logo PLANMIX" />
-    <div className="app">
+<img
+  className="logo"
+  src={`${import.meta.env.BASE_URL}Logo-PLANMIX.png`}
+  alt="logo"
+/>
 
       {/* Tabla comparativa */}
       <ComparisonTable />
